@@ -1,294 +1,378 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GEO 마케팅 전략 제안서</title>
     <style>
+      body {
+        font-family:
+          "Pretendard",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #222;
+        background: #fff;
+        margin: 0;
+        padding: 40px 60px;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      header {
+        text-align: center;
+        border-bottom: 2px solid #0066cc;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+      }
+      .logo {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 8px;
+      }
+      h1 {
+        font-size: 28px;
+        color: #0066cc;
+        margin: 10px 0;
+      }
+      .subtitle {
+        font-size: 16px;
+        color: #444;
+        margin-bottom: 20px;
+      }
+      .meta {
+        font-size: 15px;
+        color: #333;
+      }
+      h2 {
+        font-size: 22px;
+        color: #0066cc;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+        margin-top: 50px;
+      }
+      h3 {
+        font-size: 18px;
+        color: #333;
+        margin-top: 30px;
+      }
+      p {
+        margin: 12px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px 16px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #f5f9ff;
+        color: #0066cc;
+        font-weight: 600;
+      }
+      ul {
+        margin: 12px 0;
+        padding-left: 20px;
+      }
+      li {
+        margin: 6px 0;
+      }
+      .footer {
+        margin-top: 80px;
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+      }
+      @media print {
         body {
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #222;
-            background: #fff;
-            margin: 0;
-            padding: 40px 60px;
-            max-width: 960px;
-            margin: 0 auto;
+          padding: 30px;
         }
-        header {
-            text-align: center;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 20px;
-            margin-bottom: 40px;
+        .no-print {
+          display: none;
         }
-        .logo {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 8px;
-        }
-        h1 {
-            font-size: 28px;
-            color: #0066cc;
-            margin: 10px 0;
-        }
-        .subtitle {
-            font-size: 16px;
-            color: #444;
-            margin-bottom: 20px;
-        }
-        .meta {
-            font-size: 15px;
-            color: #333;
-        }
-        h2 {
-            font-size: 22px;
-            color: #0066cc;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 8px;
-            margin-top: 50px;
-        }
-        h3 {
-            font-size: 18px;
-            color: #333;
-            margin-top: 30px;
-        }
-        p {
-            margin: 12px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px 16px;
-            text-align: left;
-            vertical-align: top;
-        }
-        th {
-            background: #f5f9ff;
-            color: #0066cc;
-            font-weight: 600;
-        }
-        ul {
-            margin: 12px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin: 6px 0;
-        }
-        .footer {
-            margin-top: 80px;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-        @media print {
-            body { padding: 30px; }
-            .no-print { display: none; }
-        }
+      }
     </style>
-    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">GEO 마케팅연구원 | GEO Marketing Strategy Proposal</div>
-        <h1>GEO 마케팅 전략 제안서</h1>
-        <div class="subtitle">Generative Engine Optimization Marketing Strategy</div>
-        <div class="meta">
-            대상: ‘영월 산속의 친구’ 민박 식당<br>
-            작성: GEO 마케팅연구원 | 부원장 김진수<br>
-            작성일: 2026년 2월
-        </div>
+      <div class="logo">GEO 마케팅연구원 | GEO Marketing Strategy Proposal</div>
+      <h1>GEO 마케팅 전략 제안서</h1>
+      <div class="subtitle">
+        Generative Engine Optimization Marketing Strategy
+      </div>
+      <div class="meta">
+        대상: ‘영월 산속의 친구’ 민박 식당<br />
+        작성: GEO 마케팅연구원 | 부원장 김진수<br />
+        작성일: 2026년 2월
+      </div>
     </header>
 
     <section>
-        <h2>1. 제안 개요</h2>
-        <p>본 제안서는 강원도 영월군의 청정 자연 속 민박 식당 ‘영월 산속의 친구’가 AI 검색 시대에 대응하기 위한 <strong>GEO(Generative Engine Optimization)</strong> 마케팅 전략을 제시합니다.</p>
-        <p>기존 SEO가 구글·네이버 순위를 목표로 했다면, GEO는 ChatGPT, Gemini, Claude, Perplexity 등 생성형 AI가 답변을 만들 때 ‘영월 산속의 친구’를 자연스럽고 신뢰도 높게 추천하도록 콘텐츠와 디지털 자산을 최적화하는 차세대 접근입니다.</p>
-        <p>2025~2026년은 ‘강원 방문의 해’로, 영월 관광 수요가 폭발적으로 증가할 전망입니다. 본 전략을 통해 ‘영월 산속의 친구’를 AI가 먼저 떠올리는 힐링 명소로 자리매김하겠습니다.</p>
+      <h2>1. 제안 개요</h2>
+      <p>
+        본 제안서는 강원도 영월군의 청정 자연 속 민박 식당 ‘영월 산속의 친구’가
+        AI 검색 시대에 대응하기 위한
+        <strong>GEO(Generative Engine Optimization)</strong> 마케팅 전략을
+        제시합니다.
+      </p>
+      <p>
+        기존 SEO가 구글·네이버 순위를 목표로 했다면, GEO는 ChatGPT, Gemini,
+        Claude, Perplexity 등 생성형 AI가 답변을 만들 때 ‘영월 산속의 친구’를
+        자연스럽고 신뢰도 높게 추천하도록 콘텐츠와 디지털 자산을 최적화하는
+        차세대 접근입니다.
+      </p>
+      <p>
+        2025~2026년은 ‘강원 방문의 해’로, 영월 관광 수요가 폭발적으로 증가할
+        전망입니다. 본 전략을 통해 ‘영월 산속의 친구’를 AI가 먼저 떠올리는 힐링
+        명소로 자리매김하겠습니다.
+      </p>
     </section>
 
     <section>
-        <h2>2. 현황 분석 및 GEO 마케팅 필요성</h2>
-        
-        <h3>2-1. 시장 환경 변화</h3>
-        <ul>
-            <li>2025년 국내 여행 소비자의 45% 이상이 생성형 AI를 1차 정보원으로 활용 (한국관광공사 추산)</li>
-            <li>“영월 힐링 민박”, “강원도 산골 가정식” 등 자연어 질의 급증</li>
-            <li>AI는 다수 신뢰 출처에서 반복 언급되는 정보를 우선 인용</li>
-        </ul>
+      <h2>2. 현황 분석 및 GEO 마케팅 필요성</h2>
 
-        <h3>2-2. 영월 관광 트렌드 분석 (2025~2026)</h3>
-        <p>‘2025~2026 강원 방문의 해’ 캠페인에 따라 영월군은 강원 남부권 관광 중심지로 급부상하고 있습니다.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>주요 트렌드</th>
-                    <th>세부 내용</th>
-                    <th>‘영월 산속의 친구’ 연계 기회</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>힐링·웰니스 여행 수요 증가</td>
-                    <td>자연 속 휴식, 명상, 디지털 디톡스 선호 (강원관광재단 동향)</td>
-                    <td>산속 위치와 가정식 밥상으로 완벽한 힐링 체험 제공</td>
-                </tr>
-                <tr>
-                    <td>사계절 체험 관광 활성화</td>
-                    <td>봄 단종문화제, 여름 동강 래프팅, 가을 단풍 트레킹, 겨울 별 관측</td>
-                    <td>사계절 제철 식재료 밥상 + 주변 자연 연계 프로그램</td>
-                </tr>
-                <tr>
-                    <td>가족·친구 단위 체류형 여행</td>
-                    <td>체험 프로그램(래프팅, 트레킹, 와인 족욕 등)과 재방문 수요 증가</td>
-                    <td>텃밭 체험, 산책로, 별 관측 등 가족 친화적 콘텐츠 강화</td>
-                </tr>
-                <tr>
-                    <td>에코·슬로우 관광</td>
-                    <td>청정 자연과 지속가능성 강조 (폐광 지역 재생 포함)</td>
-                    <td>친환경 운영 철학과 귀촌 스토리로 차별화</td>
-                </tr>
-                <tr>
-                    <td>관광객 추이</td>
-                    <td>2023년 725만 명 → 2025년 상반기 순수 관광객 증가세 지속 (강원관광재단)</td>
-                    <td>AI 추천 노출로 예약 전환율 극대화 가능</td>
-                </tr>
-            </tbody>
-        </table>
+      <h3>2-1. 시장 환경 변화</h3>
+      <ul>
+        <li>
+          2025년 국내 여행 소비자의 45% 이상이 생성형 AI를 1차 정보원으로 활용
+          (한국관광공사 추산)
+        </li>
+        <li>“영월 힐링 민박”, “강원도 산골 가정식” 등 자연어 질의 급증</li>
+        <li>AI는 다수 신뢰 출처에서 반복 언급되는 정보를 우선 인용</li>
+      </ul>
 
-        <h3>2-3. ‘영월 산속의 친구’ SWOT 분석</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>구분</th>
-                    <th>내용</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>강점(S)</td>
-                    <td>청정 산속 입지, 정갈한 제철 가정식, 민박+식당 복합, 사계절 힐링 체험</td>
-                </tr>
-                <tr>
-                    <td>약점(W)</td>
-                    <td>온라인 콘텐츠 부족, 구조화 데이터 미적용, AI 추천 노출 저조</td>
-                </tr>
-                <tr>
-                    <td>기회(O)</td>
-                    <td>‘강원 방문의 해’ 수요 폭발, 힐링·웰니스 트렌드, 영월 관광 인프라 확충</td>
-                </tr>
-                <tr>
-                    <td>위협(T)</td>
-                    <td>경쟁 민박의 디지털 마케팅 강화, 대형 플랫폼(야놀자·여기어때) 예약 집중</td>
-                </tr>
-            </tbody>
-        </table>
+      <h3>2-2. 영월 관광 트렌드 분석 (2025~2026)</h3>
+      <p>
+        ‘2025~2026 강원 방문의 해’ 캠페인에 따라 영월군은 강원 남부권 관광
+        중심지로 급부상하고 있습니다.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>주요 트렌드</th>
+            <th>세부 내용</th>
+            <th>‘영월 산속의 친구’ 연계 기회</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>힐링·웰니스 여행 수요 증가</td>
+            <td>자연 속 휴식, 명상, 디지털 디톡스 선호 (강원관광재단 동향)</td>
+            <td>산속 위치와 가정식 밥상으로 완벽한 힐링 체험 제공</td>
+          </tr>
+          <tr>
+            <td>사계절 체험 관광 활성화</td>
+            <td>
+              봄 단종문화제, 여름 동강 래프팅, 가을 단풍 트레킹, 겨울 별 관측
+            </td>
+            <td>사계절 제철 식재료 밥상 + 주변 자연 연계 프로그램</td>
+          </tr>
+          <tr>
+            <td>가족·친구 단위 체류형 여행</td>
+            <td>
+              체험 프로그램(래프팅, 트레킹, 와인 족욕 등)과 재방문 수요 증가
+            </td>
+            <td>텃밭 체험, 산책로, 별 관측 등 가족 친화적 콘텐츠 강화</td>
+          </tr>
+          <tr>
+            <td>에코·슬로우 관광</td>
+            <td>청정 자연과 지속가능성 강조 (폐광 지역 재생 포함)</td>
+            <td>친환경 운영 철학과 귀촌 스토리로 차별화</td>
+          </tr>
+          <tr>
+            <td>관광객 추이</td>
+            <td>
+              2023년 725만 명 → 2025년 상반기 순수 관광객 증가세 지속
+              (강원관광재단)
+            </td>
+            <td>AI 추천 노출로 예약 전환율 극대화 가능</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2-3. ‘영월 산속의 친구’ SWOT 분석</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>내용</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>강점(S)</td>
+            <td>
+              청정 산속 입지, 정갈한 제철 가정식, 민박+식당 복합, 사계절 힐링
+              체험
+            </td>
+          </tr>
+          <tr>
+            <td>약점(W)</td>
+            <td>온라인 콘텐츠 부족, 구조화 데이터 미적용, AI 추천 노출 저조</td>
+          </tr>
+          <tr>
+            <td>기회(O)</td>
+            <td>
+              ‘강원 방문의 해’ 수요 폭발, 힐링·웰니스 트렌드, 영월 관광 인프라
+              확충
+            </td>
+          </tr>
+          <tr>
+            <td>위협(T)</td>
+            <td>
+              경쟁 민박의 디지털 마케팅 강화, 대형 플랫폼(야놀자·여기어때) 예약
+              집중
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section>
-        <h2>3. GEO 핵심 전략 (4대 축)</h2>
+      <h2>3. GEO 핵심 전략 (4대 축)</h2>
 
-        <h3>전략 1 AI가 쉽게 인용하는 구조화된 콘텐츠 구축</h3>
-        <ul>
-            <li>공식 웹사이트 FAQ 페이지 신설 (예: “영월 산속의 친구 객실 종류는?”, “제철 메뉴는?”, “동강 래프팅과 연계 가능한가요?”)</li>
-            <li><strong>Schema.org 마크업</strong> 적용 (LocalBusiness, Restaurant, LodgingBusiness, FAQPage)</li>
-            <li>Google Business Profile, 네이버 플레이스, 카카오맵 100% 완성 (고화질 사진 50장+, 메뉴·가격 실시간 업데이트)</li>
-        </ul>
+      <h3>전략 1 AI가 쉽게 인용하는 구조화된 콘텐츠 구축</h3>
+      <ul>
+        <li>
+          공식 웹사이트 FAQ 페이지 신설 (예: “영월 산속의 친구 객실 종류는?”,
+          “제철 메뉴는?”, “동강 래프팅과 연계 가능한가요?”)
+        </li>
+        <li>
+          <strong>Schema.org 마크업</strong> 적용 (LocalBusiness, Restaurant,
+          LodgingBusiness, FAQPage)
+        </li>
+        <li>
+          Google Business Profile, 네이버 플레이스, 카카오맵 100% 완성 (고화질
+          사진 50장+, 메뉴·가격 실시간 업데이트)
+        </li>
+      </ul>
 
-        <h3>전략 2 AI 자연어 질의 트리거 최적화</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>AI 예상 질의 예시</th>
-                    <th>콘텐츠 대응 방향</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>“영월 힐링 민박 추천”</td>
-                    <td>‘영월 힐링 민박 TOP 5’ 리스트 (자사 1위 강조)</td>
-                </tr>
-                <tr>
-                    <td>“강원도 산골 가정식 맛집”</td>
-                    <td>‘제철 시골 밥상’, ‘산속 가정식 백반’ 키워드 중심 포스팅</td>
-                </tr>
-                <tr>
-                    <td>“영월 가족 여행 숙소”</td>
-                    <td>가족 체험(텃밭·별 관측) 전용 페이지 및 스토리 콘텐츠</td>
-                </tr>
-                <tr>
-                    <td>“영월 동강 근처 민박”</td>
-                    <td>주변 관광 연계(동강 래프팅·단종문화제) 가이드 콘텐츠</td>
-                </tr>
-            </tbody>
-        </table>
+      <h3>전략 2 AI 자연어 질의 트리거 최적화</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>AI 예상 질의 예시</th>
+            <th>콘텐츠 대응 방향</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>“영월 힐링 민박 추천”</td>
+            <td>‘영월 힐링 민박 TOP 5’ 리스트 (자사 1위 강조)</td>
+          </tr>
+          <tr>
+            <td>“강원도 산골 가정식 맛집”</td>
+            <td>‘제철 시골 밥상’, ‘산속 가정식 백반’ 키워드 중심 포스팅</td>
+          </tr>
+          <tr>
+            <td>“영월 가족 여행 숙소”</td>
+            <td>가족 체험(텃밭·별 관측) 전용 페이지 및 스토리 콘텐츠</td>
+          </tr>
+          <tr>
+            <td>“영월 동강 근처 민박”</td>
+            <td>주변 관광 연계(동강 래프팅·단종문화제) 가이드 콘텐츠</td>
+          </tr>
+        </tbody>
+      </table>
 
-        <h3>전략 3 신뢰도 높은 외부 인용(Citation) 네트워크</h3>
-        <ul>
-            <li>여행 인플루언서(블로거·유튜버) 월 3~4회 체험단 운영</li>
-            <li>영월군·강원관광재단 공식 사이트 등재 협력</li>
-            <li>네이버 블로그, 티스토리, 브런치 등 다채널 동시 발행</li>
-            <li>고객 리뷰 이벤트 (리뷰 작성 시 제철 농산물 선물)</li>
-        </ul>
+      <h3>전략 3 신뢰도 높은 외부 인용(Citation) 네트워크</h3>
+      <ul>
+        <li>여행 인플루언서(블로거·유튜버) 월 3~4회 체험단 운영</li>
+        <li>영월군·강원관광재단 공식 사이트 등재 협력</li>
+        <li>네이버 블로그, 티스토리, 브런치 등 다채널 동시 발행</li>
+        <li>고객 리뷰 이벤트 (리뷰 작성 시 제철 농산물 선물)</li>
+      </ul>
 
-        <h3>전략 4 AI가 선호하는 감성 스토리텔링 콘텐츠</h3>
-        <ul>
-            <li>“산속의 친구가 된 사연” – 주인장 귀촌 스토리와 힐링 철학</li>
-            <li>“사계절 산속 밥상” – 봄 두릅·여름 옥수수·가을 능이·겨울 곤드레 시리즈</li>
-            <li>“영월 산속의 완벽한 하루” – 아침 산책 → 텃밭 체험 → 가정식 → 밤하늘 별 관측</li>
-            <li>숏폼 영상 시리즈 (15~60초) – 드론 산속 풍경, 조리 과정, 고객 감성 인터뷰</li>
-        </ul>
+      <h3>전략 4 AI가 선호하는 감성 스토리텔링 콘텐츠</h3>
+      <ul>
+        <li>“산속의 친구가 된 사연” – 주인장 귀촌 스토리와 힐링 철학</li>
+        <li>
+          “사계절 산속 밥상” – 봄 두릅·여름 옥수수·가을 능이·겨울 곤드레 시리즈
+        </li>
+        <li>
+          “영월 산속의 완벽한 하루” – 아침 산책 → 텃밭 체험 → 가정식 → 밤하늘 별
+          관측
+        </li>
+        <li>
+          숏폼 영상 시리즈 (15~60초) – 드론 산속 풍경, 조리 과정, 고객 감성
+          인터뷰
+        </li>
+      </ul>
     </section>
 
     <section>
-        <h2>4. 3개월 실행 로드맵</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>단계</th>
-                    <th>기간</th>
-                    <th>주요 실행 항목</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1단계</td>
-                    <td>1개월차 (기반 구축)</td>
-                    <td>웹사이트 Schema·FAQ 30건 적용<br>Google·네이버·카카오 프로필 완성<br>기본 콘텐츠 20건 발행</td>
-                </tr>
-                <tr>
-                    <td>2단계</td>
-                    <td>2개월차 (콘텐츠 확산)</td>
-                    <td>인플루언서 체험단 4회<br>스토리텔링 시리즈 주 2회 발행<br>SNS(인스타·유튜브 숏츠) 활성화</td>
-                </tr>
-                <tr>
-                    <td>3단계</td>
-                    <td>3개월차 (성과 최적화)</td>
-                    <td>AI 추천 노출 실시간 모니터링<br>리뷰·예약 데이터 분석<br>전략 고도화</td>
-                </tr>
-            </tbody>
-        </table>
+      <h2>4. 3개월 실행 로드맵</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>단계</th>
+            <th>기간</th>
+            <th>주요 실행 항목</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1단계</td>
+            <td>1개월차 (기반 구축)</td>
+            <td>
+              웹사이트 Schema·FAQ 30건 적용<br />Google·네이버·카카오 프로필
+              완성<br />기본 콘텐츠 20건 발행
+            </td>
+          </tr>
+          <tr>
+            <td>2단계</td>
+            <td>2개월차 (콘텐츠 확산)</td>
+            <td>
+              인플루언서 체험단 4회<br />스토리텔링 시리즈 주 2회 발행<br />SNS(인스타·유튜브
+              숏츠) 활성화
+            </td>
+          </tr>
+          <tr>
+            <td>3단계</td>
+            <td>3개월차 (성과 최적화)</td>
+            <td>
+              AI 추천 노출 실시간 모니터링<br />리뷰·예약 데이터 분석<br />전략
+              고도화
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section>
-        <h2>5. 기대 효과</h2>
-        <ul>
-            <li>주요 AI 엔진에서 “영월 힐링 민박”, “영월 가정식 맛집” 질의 시 상위 자연 추천</li>
-            <li>‘강원 방문의 해’ 수요 흡수로 예약률 40% 이상 증가 예상</li>
-            <li>디지털 신뢰도 상승 및 재방문·입소문 고객 확보</li>
-            <li>기존 검색엔진 동시 상위 노출로 종합적 브랜드 인지도 강화</li>
-        </ul>
+      <h2>5. 기대 효과</h2>
+      <ul>
+        <li>
+          주요 AI 엔진에서 “영월 힐링 민박”, “영월 가정식 맛집” 질의 시 상위
+          자연 추천
+        </li>
+        <li>‘강원 방문의 해’ 수요 흡수로 예약률 40% 이상 증가 예상</li>
+        <li>디지털 신뢰도 상승 및 재방문·입소문 고객 확보</li>
+        <li>기존 검색엔진 동시 상위 노출로 종합적 브랜드 인지도 강화</li>
+      </ul>
     </section>
 
     <div class="footer">
-        <strong>GEO 마케팅연구원</strong><br>
-        부원장 김진수 | AI 마케팅 전략 전문가<br><br>
-        <em>“AI가 먼저 추천하는 브랜드를 만듭니다.”</em>
+      <strong>GEO 마케팅연구원</strong><br />
+      부원장 김진수 | AI 마케팅 전략 전문가<br /><br />
+      📧 <a href="mailto:mdkorea@naver.com">mdkorea@naver.com</a><br />
+      🌐 <a href="https://geoseo.kr/23" target="_blank">https://geoseo.kr/23</a
+      ><br /><br />
+      <em>“AI가 먼저 추천하는 브랜드를 만듭니다.”</em>
     </div>
-</body>
+  </body>
 </html>
